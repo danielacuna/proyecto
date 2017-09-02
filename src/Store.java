@@ -1,11 +1,11 @@
 //Lista Doblemente Enlazada
-public class Stores {
+public class Store {
 
     private Node head;
     private Node tail;
     private int size;
 
-    public Stores(){
+    public Store(){
         this.head = null;
         this.tail = null;
         this.size = 0;

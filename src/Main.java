@@ -14,7 +14,7 @@ public class Main {
         System.out.println("Está vacia: "+l.isEmpty());
 
         System.out.println("Dato: "+l.obtener(0));
-        Stores le = new Stores();
+        Store le = new Store();
 
         System.out.println(le.obtener(4));
         System.out.println(le.getPrevI(7));
@@ -29,7 +29,7 @@ public class Main {
 
         Directory dir = new Directory();
         Read read = new Read();
-        Stores store = new Stores();
+        Store store = new Store();
         store.addhead();
         System.out.println(store.getSize());
         System.out.println(store.gethead());
