@@ -1,0 +1,21 @@
+commit 7e3239897b416d1e4fd70483ef3189e9265ea4b9
+Author: Daniel Acuña <danielacu_a@estudiantec.cr>
+Date:   Sat Sep 2 14:11:11 2017 -0600
+
+    Cambio de nombre
+    
+    Ahora si cambio a Stores
+
+commit b33a3e28bea2af9acb563cc5da00ed92f0e89f92
+Author: Daniel Acuña <danielacu_a@estudiantec.cr>
+Date:   Sat Sep 2 13:45:25 2017 -0600
+
+    Primer commit del proyecto en si
+    
+    Intentando guardar carpetas en un commit
+
+commit b425ccd1dd3cd3bf67841cdce31e7d4c8ed025a0
+Author: Daniel Acuña Mora <30982928+danielacuna@users.noreply.github.com>
+Date:   Fri Sep 1 22:44:09 2017 -0600
+
+    Initial commit

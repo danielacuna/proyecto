@@ -20,9 +20,12 @@ public class Store {
     public void addhead(){
         Directory dir = new Directory();
         Read read = new Read();
-        Object value = dir.createDir(read.read());
+        System.out.println("Inserte Nombre: ");
+        Object name = dir.createDir(read.readInput());
+        System.out.println("Inserte Valor: ");
+        Object value = dir.createDir(read.readInput());
         if (this.head==null){
-            Node nodo = new Node(value);
+            Node nodo = new Node(name,value);
             this.head = nodo;
             this.tail = nodo;
 
@@ -30,7 +33,7 @@ public class Store {
 
         }else{
             Node temp = this.head;
-            Node nodo = new Node(value);
+            Node nodo = new Node(name,value);
             nodo.linkNext(temp);
             temp.linkPrev(nodo);
             this.head = nodo;
@@ -41,16 +44,21 @@ public class Store {
     public int getSize(){
         return this.size;
     }
-    public Object obtener(int i){
+
+
+    public Object obtener(){
         int count = 0;
         Node temporal = this.head;
 
-        while (count < i){
+        while (count < getSize()-1){
+            System.out.println(temporal.getName());
             temporal = temporal.getNext();
             count++;
         }
-        return temporal.getValue();
+        return temporal;
     }
+
+
     public Object obtenerFinal(){
         int count = 0;
         Node temp = this.head;
@@ -83,5 +91,9 @@ public class Store {
             }
             return temp.getPrev().getValue();
         }
+    }
+    public void addDoc(){
+
+
     }
 }
