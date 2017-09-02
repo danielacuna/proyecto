@@ -1,23 +1,14 @@
 import javax.jws.Oneway;
 
 public class Node {
-    private Object name;
     private Object value;
     private Node next;
     private Node prev;
 
-    public Node(Object name, Object value) {
-
-        this.name = name;
+    public Node(Object value) {
         this.value = value;
         this.next = null;
         this.prev = null;
-    }
-    public Node(Object value){
-        this.value = value;
-        this.next = null;
-        this.prev = null;
-
     }
 
     public Object getValue() {
@@ -25,9 +16,6 @@ public class Node {
             return "El valor es nulo";
         }else{
         return value;}
-    }
-    public Object getName(){
-        return this.name;
     }
 
     public Node getNext() {
