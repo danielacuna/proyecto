@@ -6,7 +6,7 @@ public class Directory {
         File dir = new File("/home/dantroll/Documents/LinkedDB/"+value.toString());
 
         boolean successfull = dir.mkdir();
-        
+
         if (successfull){
             System.out.println("Se creó el puto");
         }else{
