@@ -130,6 +130,7 @@ public class Store {
             System.out.println("Inserte el nombre: ");
             Object name = read.readInput();
             addTail(name);
+            dir.createDir(name);
 
         }
 
