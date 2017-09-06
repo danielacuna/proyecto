@@ -1,8 +1,10 @@
+package org.linkedDb.lists;
+
 //Lista Circular Doblemente Enlazada
 public class Documentos {
 
-    private Node head;
-    private Node tail;
+    private org.linkedDb.lists.Node head;
+    private org.linkedDb.lists.Node tail;
     private int size;
 
     Documentos(){
@@ -12,12 +14,12 @@ public class Documentos {
     }
     public void addFirst(Object value) {
         if (head == null) {
-            Node nodo = new Node(value);
+            org.linkedDb.lists.Node nodo = new org.linkedDb.lists.Node(value);
             this.head = nodo;
             this.tail = nodo;
         }else{
-            Node temp = this.head;
-            Node nodo = new Node(value);
+            org.linkedDb.lists.Node temp = this.head;
+            org.linkedDb.lists.Node nodo = new org.linkedDb.lists.Node(value);
             nodo.linkNext(temp);
             temp.linkPrev(nodo);
             nodo.linkPrev(tail);

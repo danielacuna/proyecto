@@ -1,4 +1,3 @@
-import javax.jws.Oneway;
 
 public class Node {
     private Object name;

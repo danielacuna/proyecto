@@ -1,8 +1,10 @@
+package org.linkedDb.lists;
+
 //Lista Simple
 public class Objects {
 
-    private Node head;
-    private Node tail;
+    private org.linkedDb.lists.Node head;
+    private org.linkedDb.lists.Node tail;
     private int size;
 
     public Objects(){
@@ -18,11 +20,11 @@ public class Objects {
     }
     public void addhead(Object value){
         if (this.head==null){
-            head = new Node(value);
+            head = new org.linkedDb.lists.Node(value);
 
         }else{
-            Node temp = this.head;
-            Node nodo = new Node(value);
+            org.linkedDb.lists.Node temp = this.head;
+            org.linkedDb.lists.Node nodo = new org.linkedDb.lists.Node(value);
             nodo.linkNext(temp);
             this.head = nodo;
 
@@ -35,7 +37,7 @@ public class Objects {
     }
     public Object obtener(int i){
         int count = 0;
-        Node temporal = this.head;
+        org.linkedDb.lists.Node temporal = this.head;
 
         while (count < i){
             temporal = temporal.getNext();
@@ -59,7 +61,7 @@ public class Objects {
             head= head.getNext();
         }else{
             int contador = 0;
-            Node temp = head;
+            org.linkedDb.lists.Node temp = head;
             while (contador < index-1){
                 temp = temp.getNext();
                 contador++;

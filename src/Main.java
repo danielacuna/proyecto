@@ -1,6 +1,8 @@
+package org.linkedDb.lists;
+
 public class Main {
     public static void main (String[] args){
-        Objects l = new Objects();
+        org.linkedDb.lists.Objects l = new org.linkedDb.lists.Objects();
         System.out.println("Está vacia: "+l.isEmpty());
         l.delHead();
         l.addhead(9);
@@ -17,11 +19,11 @@ public class Main {
 
 
 
-        Documentos lc = new Documentos();
+        org.linkedDb.lists.Documentos lc = new org.linkedDb.lists.Documentos();
         lc.addFirst(2);
         lc.addFirst(5);
         System.out.println(lc.seeFirst());
-        Store store = new Store();
+        org.linkedDb.lists.Store store = new org.linkedDb.lists.Store();
         store.addDoc();
         store.addDoc();
         store.addDoc();
