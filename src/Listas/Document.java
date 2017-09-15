@@ -1,16 +1,30 @@
-//Lista Circular Doblemente Enlazada
-public class Documentos {
+package Listas;//Lista Circular Doblemente Enlazada
+
+import org.omg.CORBA.OBJ_ADAPTER;
+
+/**
+ * @author daniel acuña
+ *
+ * La clase documentos
+ *
+ * */
+
+    public class Document {
 
     private Node head;
     private Node tail;
     private int size;
+    private String name;
 
-    Documentos(){
+    public Document(){
         this.head = null;
         this.tail = null;
         this.size = 0;
     }
-    public void addFirst(Object value) {
+    public Object addFirst(Object value) {
+    //    Read read = new Read();
+    //    System.out.println("Inserte el Nombre del Doc");
+    //    Object value = read.readInput();
         if (head == null) {
             Node nodo = new Node(value);
             this.head = nodo;
@@ -25,11 +39,14 @@ public class Documentos {
             this.tail.linkNext(this.head);
         }
         size++;
+        return head;
     }
     public Object seeFirst(){
-        return this.tail.getNext().getName();
+        return this.head.getName();
     }
-
+    public int getSize(){
+        return this.size;
+    }
 
 
 

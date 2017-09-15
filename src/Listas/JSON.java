@@ -1,3 +1,5 @@
+package Listas;
+
 import java.io.FileWriter;
 import java.io.IOException;
 import org.json.simple.JSONArray;
@@ -19,8 +21,8 @@ public class JSON{
         obj.put("Tags", list);
 
         JSONObject innerObj = new JSONObject();
-        innerObj.put("PostX","Escribir un JSON");
-        innerObj.put("PostY", "Leer un JSON");
+        innerObj.put("PostX","Escribir un Listas.JSON");
+        innerObj.put("PostY", "Leer un Listas.JSON");
         innerObj.put("PostZ", "lalala");
 
         obj.put("Posts",innerObj);

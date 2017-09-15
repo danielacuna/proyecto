@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TreeView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <TextField fx:id="dato" layoutX="14.0" layoutY="14.0" prefHeight="26.0" prefWidth="137.0" />
+      <Button fx:id="btn" layoutX="151.0" layoutY="14.0" mnemonicParsing="false" onAction="#addStore" text="Add Store" />
+      <TreeView layoutX="14.0" layoutY="53.0" prefHeight="335.0" prefWidth="220.0" />
+   </children>
+</AnchorPane>

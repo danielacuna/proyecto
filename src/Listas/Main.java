@@ -1,3 +1,5 @@
+package Listas;
+
 public class Main {
     public static void main (String[] args){
         Objects l = new Objects();
@@ -15,17 +17,15 @@ public class Main {
 
         System.out.println("Dato: "+l.obtener(0));
 
-
-
-        Documentos lc = new Documentos();
-        lc.addFirst(2);
-        lc.addFirst(5);
-        System.out.println(lc.seeFirst());
+        Document lc = new Document();
         Store store = new Store();
-        store.addDoc();
-        store.addDoc();
-        store.addDoc();
-        store.addDoc();
+
+        store.addStore();
+        store.addDoc(lc);
         store.getStores();
+        System.out.println(lc.seeFirst());
+
+
+
     }
 }
