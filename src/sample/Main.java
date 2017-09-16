@@ -18,18 +18,13 @@ public class Main extends Application {
     @Override
     public void start(Stage primaryStage) throws Exception{
         Parent root = FXMLLoader.load(getClass().getResource("sample.fxml"));
-        primaryStage.setTitle("Hello World");
-        primaryStage.setScene(new Scene(root, 300, 275));
+        primaryStage.setTitle("Linked DB");
+        primaryStage.setScene(new Scene(root, 500, 450));
         primaryStage.show();
     }
 
 
     public static void main(String[] args) {
-        Store nodo = new Store();
-        nodo.addhead(4);
-        nodo.getSize();
-        nodo.getHead();
-        System.out.println(nodo.getSize());
 
         launch(args);}
 }

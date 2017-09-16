@@ -23,6 +23,8 @@ public class Main {
         store.addStore();
         store.addDoc(lc);
         store.getStores();
+        System.out.println("Documentos: "+lc.getSize());
+        System.out.println(store.getHead());
         System.out.println(lc.seeFirst());
 
 

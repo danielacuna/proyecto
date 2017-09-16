@@ -6,9 +6,9 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="322.0" prefWidth="300.0" style="-fx-background-color: #616161;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="322.0" prefWidth="310.0" style="-fx-background-color: #616161;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <JFXTextField focusColor="WHITE" labelFloat="true" layoutX="14.0" layoutY="52.0" promptText="Nombre" style="-fx-background-color: #FAFAFA;" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="131.0" />
+      <JFXTextField focusColor="WHITE" labelFloat="true" layoutX="14.0" layoutY="52.0" prefHeight="24.0" prefWidth="142.0" promptText="Nombre" style="-fx-background-color: #FAFAFA;" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="154.0" />
       <Text fill="WHITE" layoutX="14.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Documento" AnchorPane.leftAnchor="14.0">
          <font>
             <Font name="System Bold" size="15.0" />
@@ -19,10 +19,10 @@
             <Font name="System Bold" size="17.0" />
          </font>
       </Text>
-      <JFXTextField focusColor="WHITE" labelFloat="true" layoutX="14.0" layoutY="146.0" promptText="Nombre" style="-fx-background-color: #FAFAFA;" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="131.0" />
-      <JFXTextField focusColor="WHITE" labelFloat="true" layoutX="14.0" layoutY="186.0" promptText="Tipo" style="-fx-background-color: #FAFAFA;" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="131.0" />
-      <JFXTextField focusColor="WHITE" labelFloat="true" layoutX="14.0" layoutY="228.0" promptText="Tipo Especial" style="-fx-background-color: #FAFAFA;" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="131.0" />
-      <JFXTextField focusColor="WHITE" labelFloat="true" layoutX="14.0" layoutY="268.0" promptText="R ó NR" style="-fx-background-color: #FAFAFA;" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="131.0" />
-      <JFXButton buttonType="RAISED" layoutX="217.0" layoutY="360.0" style="-fx-background-color: #FAFAFA;" text="Aceptar" AnchorPane.bottomAnchor="14.0" AnchorPane.rightAnchor="14.0" />
+      <JFXTextField focusColor="WHITE" labelFloat="true" layoutX="14.0" layoutY="146.0" prefHeight="24.0" prefWidth="142.0" promptText="Nombre" style="-fx-background-color: #FAFAFA;" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="154.0" />
+      <JFXTextField focusColor="WHITE" labelFloat="true" layoutX="14.0" layoutY="186.0" prefHeight="24.0" prefWidth="142.0" promptText="Tipo" style="-fx-background-color: #FAFAFA;" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="154.0" />
+      <JFXTextField focusColor="WHITE" labelFloat="true" layoutX="14.0" layoutY="228.0" prefHeight="24.0" prefWidth="142.0" promptText="Tipo Especial" style="-fx-background-color: #FAFAFA;" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="154.0" />
+      <JFXTextField focusColor="WHITE" labelFloat="true" layoutX="14.0" layoutY="268.0" prefHeight="24.0" prefWidth="142.0" promptText="R ó NR" style="-fx-background-color: #FAFAFA;" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="154.0" />
+      <JFXButton buttonType="RAISED" layoutX="319.0" layoutY="279.0" style="-fx-background-color: #FAFAFA;" text="Aceptar" AnchorPane.bottomAnchor="17.0" AnchorPane.rightAnchor="14.0" />
    </children>
 </AnchorPane>

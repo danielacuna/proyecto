@@ -83,7 +83,7 @@ public class Store {
 
         } else {
             while (count < getSize()) {
-                System.out.println("Listas.Store: " + temp.getName());
+                System.out.println("Store(s): " + temp.getName());
                 temp = temp.getNext();
                 count++;
             }
@@ -121,13 +121,14 @@ public class Store {
 
     public void addStore() {
         Read read = new Read();
-        System.out.println("Ingrese el Nombre del Listas.Store: ");
+        System.out.println("Ingrese el Nombre del Store: ");
         Object name = read.readInput();
         dir.setName(name);
         addTail(name);
     }
 
     public void addDoc(Document value) {
+        Document doc = new Document();
         if(head==null) {
             Node node = new Node(value);
             node = head;
@@ -141,13 +142,15 @@ public class Store {
     public void getStore(Object name){
         Node node = head;
     }
+
     public void commit(){
         Node temp = this.head;
-        while (temp.getNext() != null){
+        int count = 0;
+        while (count < getSize()) {
             dir.setName(temp.getName());
             dir.createDir();
             temp = temp.getNext();
-
+            count++;
         }
     }
 

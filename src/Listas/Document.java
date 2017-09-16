@@ -1,6 +1,5 @@
 package Listas;//Lista Circular Doblemente Enlazada
 
-
 /**
  * @author daniel acuña
  *
@@ -21,9 +20,6 @@ package Listas;//Lista Circular Doblemente Enlazada
         this.size = 0;
     }
     public Object addFirst(Object value) {
-    //    Read read = new Read();
-    //    System.out.println("Inserte el Nombre del Doc");
-    //    Object value = read.readInput();
         if (head == null) {
             Node nodo = new Node(value);
             this.head = nodo;
