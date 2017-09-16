@@ -138,10 +138,17 @@ public class Store {
             node.linkNext(temp);
         }
     }
-    public void getDoc(Object name){
+    public void getStore(Object name){
         Node node = head;
+    }
+    public void commit(){
+        Node temp = this.head;
+        while (temp.getNext() != null){
+            dir.setName(temp.getName());
+            dir.createDir();
+            temp = temp.getNext();
 
-
+        }
     }
 
 }
