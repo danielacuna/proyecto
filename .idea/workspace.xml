@@ -2,21 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c1a0cfd6-b7ce-4416-866a-42f813c25afb" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Listas/Listas/Document.class" afterPath="$PROJECT_DIR$/out/production/Listas/Listas/Document.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Listas/Listas/Main.class" afterPath="$PROJECT_DIR$/out/production/Listas/Listas/Main.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Listas/Listas/Store.class" afterPath="$PROJECT_DIR$/out/production/Listas/Listas/Store.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Listas/sample/Controller.class" afterPath="$PROJECT_DIR$/out/production/Listas/sample/Controller.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Listas/sample/Main.class" afterPath="$PROJECT_DIR$/out/production/Listas/sample/Main.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Listas.iml" afterPath="$PROJECT_DIR$/Listas.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Listas/sample/sample.fxml" afterPath="$PROJECT_DIR$/out/production/Listas/sample/sample.fxml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Listas/Document.java" afterPath="$PROJECT_DIR$/src/Listas/Document.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Listas/Main.java" afterPath="$PROJECT_DIR$/src/Listas/Main.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Listas/Store.java" afterPath="$PROJECT_DIR$/src/Listas/Store.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/sample/Controller.java" afterPath="$PROJECT_DIR$/src/sample/Controller.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/sample/Main.java" afterPath="$PROJECT_DIR$/src/sample/Main.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/sample/document.fxml" afterPath="$PROJECT_DIR$/src/sample/document.fxml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/sample/sample.fxml" afterPath="$PROJECT_DIR$/src/sample/sample.fxml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -40,11 +26,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
-              <caret line="45" column="74" lean-forward="true" selection-start-line="45" selection-start-column="74" selection-end-line="45" selection-end-column="74" />
+            <state relative-caret-position="198">
+              <caret line="34" column="45" lean-forward="true" selection-start-line="34" selection-start-column="45" selection-end-line="34" selection-end-column="45" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#674#684#0" expanded="true" />
@@ -61,6 +47,16 @@
                 <element signature="e#5328#5329#0" expanded="true" />
                 <element signature="e#5373#5374#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="144">
+              <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -173,7 +169,6 @@
         <option value="$PROJECT_DIR$/src/Main.java" />
         <option value="$PROJECT_DIR$/src/Listas/JSON.java" />
         <option value="$PROJECT_DIR$/src/material.css" />
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/src/sample/doc_controller.java" />
         <option value="$PROJECT_DIR$/src/Listas/Document.java" />
         <option value="$PROJECT_DIR$/src/Listas/Store.java" />
@@ -182,6 +177,7 @@
         <option value="$PROJECT_DIR$/src/Listas/Main.java" />
         <option value="$PROJECT_DIR$/src/TreeTest.java" />
         <option value="$PROJECT_DIR$/src/sample/Controller.java" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -758,13 +754,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/Documents/jdk1.8.0_144/javafx-src.zip!/javafx/util/Callback.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="189">
@@ -878,8 +867,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="45" column="74" lean-forward="true" selection-start-line="45" selection-start-column="74" selection-end-line="45" selection-end-column="74" />
+        <state relative-caret-position="198">
+          <caret line="34" column="45" lean-forward="true" selection-start-line="34" selection-start-column="45" selection-end-line="34" selection-end-column="45" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#674#684#0" expanded="true" />
@@ -896,6 +885,14 @@
             <element signature="e#5328#5329#0" expanded="true" />
             <element signature="e#5373#5374#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
