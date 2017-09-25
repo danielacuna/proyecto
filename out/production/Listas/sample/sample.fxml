@@ -9,6 +9,7 @@
    <children>
       <JFXTextField fx:id="dato" layoutX="14.0" layoutY="15.0" onAction="#addStore" prefHeight="24.0" prefWidth="220.0" promptText="Insertar Store" />
       <JFXButton fx:id="document" buttonType="RAISED" layoutX="246.0" layoutY="14.0" onAction="#document0" ripplerFill="#2e4794" text="Add Document" />
+      <JFXButton fx:id="delDir" buttonType="RAISED" layoutX="246.0" layoutY="78" onAction="#delDir" ripplerFill="#2e4794" text="Del Dir" />
       <JFXButton fx:id="commit" buttonType="RAISED" layoutX="518.0" layoutY="375.0" onAction="#commit" ripplerFill="#3057cd" text="Commit" AnchorPane.bottomAnchor="14.0" AnchorPane.rightAnchor="14.0" />
       <JFXTreeView fx:id="treeView" layoutX="14.0" layoutY="49.0" prefHeight="352.0" prefWidth="220.0" />
       <JFXButton fx:id="refresh" layoutX="254.0" layoutY="49.0" onAction="#prueba" text="Refresh" />

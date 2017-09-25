@@ -2,6 +2,8 @@ package Listas;
 
 import javax.jws.Oneway;
 import java.io.File;
+import java.nio.file.Files;
+import java.nio.file.Path;
 
 public class Directory {
 
@@ -16,7 +18,8 @@ public class Directory {
     }
 
     public void createDir(){
-        File dir = new File("/home/dantroll/Documents/LinkedDB/"+this.name.toString());
+        new File("LinkedDB").mkdir();
+        File dir = new File("LinkedDB\\"+this.name.toString());
 
         boolean successfull = dir.mkdir();
 
@@ -28,6 +31,10 @@ public class Directory {
 
     }
     public void deleteDir(Object value) {
+
+
+    }
+    public void del(){
 
     }
 

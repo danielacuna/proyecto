@@ -1,5 +1,6 @@
 package sample;
 
+import Listas.Directory;
 import Listas.Document;
 import Listas.Node;
 import Listas.Store;
@@ -25,12 +26,14 @@ public class Controller {
     @FXML
     private TreeView<String> treeView;
     @FXML
-            private Button refresh;
+    private Button delDir;
+    @FXML
+    private Button refresh;
 
 
     Document doc = new Document();
     Store store = new Store();
-
+    Directory dir = new Directory();
 
     public void prueba() {dato.clear();
 
@@ -51,7 +54,9 @@ public class Controller {
 
 
 
-    public void aber() {
+    public void delDir() {
+        dir.deleteDir(dato.getText());
+
 
 
     }
@@ -86,6 +91,7 @@ public class Controller {
         }
 
     }
+
 
 
 }
