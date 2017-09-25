@@ -1,10 +1,13 @@
 package Listas;
 
+import java.util.ArrayList;
+
 //Lista Doblemente Enlazada
 public class Store {
 
     private Node head;
     private Node tail;
+    private Document doc;
     private int size;
 
     public Store() {
@@ -21,16 +24,17 @@ public class Store {
         }
     }
 
-    public void addhead(Object value) {
+    public void addhead(Object name) {
         if (this.head == null) {
-            Node nodo = new Node(value);
+            Node nodo = new Node(name);
+            doc = new Document();
             this.head = nodo;
             this.tail = nodo;
 
 
         } else {
             Node temp = this.head;
-            Node nodo = new Node(value);
+            Node nodo = new Node(name);
             nodo.linkNext(temp);
             temp.linkPrev(nodo);
             this.head = nodo;
@@ -42,6 +46,7 @@ public class Store {
     public void addTail(Object name) {
         if (this.head == null) {
             Node nodo = new Node(name);
+            doc = new Document();
             this.head = nodo;
             this.tail = nodo;
 
@@ -62,11 +67,11 @@ public class Store {
     }
 
 
-    public Object getIndex(int index) {
+    public Object getIndexName(int index) {
         int count = 0;
         Node temporal = this.head;
 
-        while (count < index - 1) {
+        while (count < index ) {
             temporal = temporal.getNext();
             count++;
         }
@@ -74,21 +79,20 @@ public class Store {
     }
 
 
-    public void getStores() {
+    public ArrayList<Object> getStores() {
         int count = 0;
         Node temp = this.head;
-
+        ArrayList<Object> stores = new ArrayList<Object>(getSize());
         if (head == null) {
-            System.out.println("No hay stores");
-
+            return null;
         } else {
             while (count < getSize()) {
-                System.out.println("Store(s): " + temp.getName());
                 temp = temp.getNext();
                 count++;
+                stores.add(temp.getName());
             }
         }
-
+        return stores;
     }
 
     public Object getHead() {

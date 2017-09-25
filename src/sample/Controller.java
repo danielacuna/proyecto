@@ -12,6 +12,8 @@ import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.stage.Stage;
 
+import java.util.ArrayList;
+
 
 public class Controller {
     @FXML
@@ -22,20 +24,31 @@ public class Controller {
     private Button document;
     @FXML
     private TreeView<String> treeView;
+    @FXML
+            private Button refresh;
 
 
-    void prueba(String text) {
-        TreeItem<String> root = new TreeItem<>("Stores");
-        TreeItem parent1 = new TreeItem(text);
-        root.getChildren().add(parent1);
+    Document doc = new Document();
+    Store store = new Store();
+
+
+    public void prueba() {dato.clear();
+
+        int size = store.getSize();
+
+        TreeItem<String> root = new TreeItem<>();
+        for (int i = 0;i<size;i++) {
+            root.setExpanded(true);
+            TreeItem<String> item = new TreeItem<String> (store.getIndexName(i).toString());
+            root.getChildren().add(item);
+        }
         treeView.setRoot(root);
+        treeView.setShowRoot(false);
 
 
     }
 
 
-    Document doc = new Document();
-    Store store = new Store();
 
 
     public void aber() {
@@ -54,8 +67,8 @@ public class Controller {
         }else{
         store.addhead(dato.getText());
         System.out.println(store.getHead());
-        System.out.println(store.getSize());}
-        prueba(dato.getText());
+        System.out.println(store.getSize());
+        prueba();}
     }
     public void commit(){
         store.commit();

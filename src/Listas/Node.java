@@ -4,6 +4,8 @@ public class Node {
     private Object name;
     private Node next;
     private Node prev;
+    private Document docu;
+    private Object obj;
 
     public Node(Object name) {
         this.name = name;
@@ -32,4 +34,19 @@ public class Node {
         return this.prev;
     }
 
+    public Document getDocu() {
+        return docu;
+    }
+
+    public void setDocu(Document docu) {
+        this.docu = docu;
+    }
+
+    public Object getObj() {
+        return obj;
+    }
+
+    public void setObj(Object obj) {
+        this.obj = obj;
+    }
 }

@@ -12,21 +12,23 @@ package Listas;//Lista Circular Doblemente Enlazada
     private Node head;
     private Node tail;
     private int size;
-    private String name;
+    private Object object;
 
     public Document(){
         this.head = null;
         this.tail = null;
         this.size = 0;
     }
-    public Object addFirst(Object value) {
+    public Object addFirst(Object name){
         if (head == null) {
-            Node nodo = new Node(value);
+            Node nodo = new Node(name);
+            object = new Object();
             this.head = nodo;
             this.tail = nodo;
         }else{
             Node temp = this.head;
-            Node nodo = new Node(value);
+            Node nodo = new Node(name);
+            object = new Object();
             nodo.linkNext(temp);
             temp.linkPrev(nodo);
             nodo.linkPrev(tail);
@@ -35,6 +37,16 @@ package Listas;//Lista Circular Doblemente Enlazada
         }
         size++;
         return head;
+    }
+    public Object getIndexName(int index) {
+        int count = 0;
+        Node temporal = this.head;
+
+        while (count < index ) {
+            temporal = temporal.getNext();
+            count++;
+        }
+        return temporal.getName();
     }
     public Object seeFirst(){
         return this.head.getName();
