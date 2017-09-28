@@ -83,7 +83,7 @@ public class Controller {
         try {
             Stage Stage = new Stage();
             Parent root1 = FXMLLoader.load(getClass().getResource("document.fxml"));
-            Stage.setTitle("Hello World");
+            Stage.setTitle("New Document");
             Stage.setScene(new Scene(root1, 300, 275));
             Stage.show();
         }catch (Exception e){

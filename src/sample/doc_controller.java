@@ -1,4 +1,8 @@
 package sample;
+import Listas.Directory;
+import Listas.Document;
+import Listas.Node;
+import Listas.Store;
 
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -6,40 +10,34 @@ import java.util.ResourceBundle;
 import javafx.beans.property.SimpleStringProperty;
 import javafx.beans.value.ObservableValue;
 import javafx.fxml.FXML;
-import javafx.scene.control.TreeItem;
-import javafx.scene.control.TreeTableColumn;
-import javafx.scene.control.TreeTableView;
+import javafx.scene.control.*;
 import javafx.util.Callback;
 
 public class doc_controller {
-
     @FXML
-    private ResourceBundle resources;
-
+    private TextField name;
     @FXML
-    private URL location;
-
+    private TextField atN;
     @FXML
-    private TreeTableView<String> tableView;
-
+    private TextField atT;
     @FXML
-    private TreeTableColumn<String , String> col1;
-
-    TreeItem<String> item1 = new TreeItem<>("Daniel");
-    TreeItem<String> item2 = new TreeItem<>("Juan");
-    TreeItem<String> parent1 = new TreeItem<>("Vainas");
-
-    TreeItem<String> root = new TreeItem<>("Nombres");
-
-
-
+    private TextField atS;
     @FXML
-    void initialize() {
-        parent1.getChildren().setAll(item1,item2);
-        root.getChildren().setAll(parent1);
-        col1.setCellValueFactory(param -> new SimpleStringProperty(param.getValue().getValue()));
-                tableView.setRoot(root);
+    private TextField atR;
+    @FXML
+    private Button accept;
 
+    Store store = new Store();
+    Document doc = new Document();
 
+    public void print(){
+        System.out.println("Nombre Documento: "+name.getText());
+        System.out.println("Nombre at: "+atN.getText());
+        System.out.println("Tipo at: "+atT.getText());
+        System.out.println("Llave at: "+atS.getText());
+        System.out.println("Requerido : "+atR.getText());
     }
+
+
+
 }
