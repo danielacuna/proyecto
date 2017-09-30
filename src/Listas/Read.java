@@ -1,5 +1,9 @@
 package Listas;
 
+/**
+ * En fase de pruebas para el input de usuario en consola, actualmaente está obsoleto.
+ */
+
 import java.util.Scanner;
 
 public class Read {

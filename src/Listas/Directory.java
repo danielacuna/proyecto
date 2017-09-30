@@ -1,9 +1,10 @@
 package Listas;
 
-import javax.jws.Oneway;
 import java.io.File;
-import java.nio.file.Files;
-import java.nio.file.Path;
+
+/**
+ * @author Daniel Acuña
+ */
 
 public class Directory {
 
@@ -17,24 +18,25 @@ public class Directory {
         this.name = name;
     }
 
+    /**
+     * Base para crear Directorios
+     */
     public void createDir(){
+        /**
+         * Hace un Directorio LLamado LinkedDB en la misma ruta del Jar.
+         * Para luego crear los directorios ahi mismo.
+         * Si retorna valor true al hacer el Directorio envia unos mensajes.
+         */
         new File("LinkedDB").mkdir();
         File dir = new File("LinkedDB\\"+this.name.toString());
 
         boolean successfull = dir.mkdir();
 
         if (successfull){
-            System.out.println("Se creó el puto");
+            System.out.println("¡Directorio creado con éxito!");
         }else{
-            System.out.println("No se creó");
+            System.out.println("No se creó el Directorio");
         }
-
-    }
-    public void deleteDir(Object value) {
-
-
-    }
-    public void del(){
 
     }
 

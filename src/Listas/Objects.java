@@ -1,8 +1,12 @@
 package Listas;
 
-//Lista Simple
-public class Objects {
+import java.io.Serializable;
 
+//Lista Simple
+public class Objects implements Serializable {
+    /**
+     * Se ponen los atributos que tendrá la clase
+     */
     private Node head;
     private Node tail;
     private int size;

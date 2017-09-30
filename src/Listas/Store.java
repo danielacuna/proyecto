@@ -1,21 +1,35 @@
 package Listas;
 
-import java.util.ArrayList;
+import java.io.Serializable;
+
+/**
+ * @author Daniel Acuña
+ */
 
 //Lista Doblemente Enlazada
-public class Store {
-
+public class Store implements Serializable{
+    /**
+     * Se ponen los atributos que tendrá la clase
+     */
     private Node head;
     private Node tail;
     private Document doc;
     private int size;
 
+    /**
+     * Constructor de la clase
+     */
     public Store() {
+        this.doc = new Document();
         this.head = null;
         this.tail = null;
         this.size = 0;
     }
 
+    /**
+     * Ver si la lista está vacía.
+     * @return
+     */
     public boolean isEmpty() {
         if (this.head == null) {
             return true;
@@ -24,6 +38,27 @@ public class Store {
         }
     }
 
+    /**
+     * Obetner el nodo principal de la Lista, el tamaño getSize.
+     * y getHeadName para ver el nombre del primer nodo.
+     * @return
+     */
+    public Node getHead(){
+        return this.head;
+    }
+    public Object getHeadName() {
+        return this.head.getName();
+    }
+    public int getSize() {
+        return this.size;
+    }
+
+
+
+    /**
+     *Agregar nodo al principio de la Lista
+     * @param name
+     */
     public void addhead(Object name) {
         if (this.head == null) {
             Node nodo = new Node(name);
@@ -35,6 +70,7 @@ public class Store {
         } else {
             Node temp = this.head;
             Node nodo = new Node(name);
+            doc = new Document();
             nodo.linkNext(temp);
             temp.linkPrev(nodo);
             this.head = nodo;
@@ -43,6 +79,10 @@ public class Store {
         this.size++;
     }
 
+    /**
+     * Agregar un nodo al final de la lista.
+     * @param name
+     */
     public void addTail(Object name) {
         if (this.head == null) {
             Node nodo = new Node(name);
@@ -62,11 +102,11 @@ public class Store {
         this.size++;
     }
 
-    public int getSize() {
-        return this.size;
-    }
 
-
+/**
+ * Obtener el Nombre de un store basado en su indice(Necesaario para el
+ * ciclo for)
+ */
     public Object getIndexName(int index) {
         int count = 0;
         Node temporal = this.head;
@@ -78,30 +118,41 @@ public class Store {
         return temporal.getName();
     }
 
-
-    public ArrayList<Object> getStores() {
+    /**
+     * Obetner el nodo según su indice o posicion en la lista
+     * @param index
+     * @return
+     */
+    public Node getIndex(int index) {
         int count = 0;
-        Node temp = this.head;
-        ArrayList<Object> stores = new ArrayList<Object>(getSize());
-        if (head == null) {
-            return null;
-        } else {
-            while (count < getSize()) {
-                temp = temp.getNext();
-                count++;
-                stores.add(temp.getName());
-            }
+        Node temporal = this.head;
+
+        while (count < index ) {
+            temporal = temporal.getNext();
+            count++;
         }
-        return stores;
+        return temporal;
     }
 
-    public Object getHead() {
-        return this.head.getName();
-    }
+    /**
+     * Para obtener un nodo basado en su nombre.
+     * @param name
+     * @return
+     */
+    public Object getNode(Object name) {
+        int count = 0;
+        Node temporal = this.head;
 
-    public Object getTail() {
-        return this.tail.getName();
+        while (temporal.getName() != name ) {
+            temporal = temporal.getNext();
+            count++;
+        }
+        return temporal;
     }
+    /**
+     *
+     * Para obtener el nodo anterior
+     */
 
     public Object getPrevI(int index) {
         int counter = 0;
@@ -120,33 +171,23 @@ public class Store {
             return temp.getPrev().getName();
         }
     }
-
+/**
+ * Instancia de clase Directory para usarse posteriormente
+ * en el "commit"
+ */
     Directory dir = new Directory();
 
-    public void addStore() {
-        Read read = new Read();
-        System.out.println("Ingrese el Nombre del Store: ");
-        Object name = read.readInput();
-        dir.setName(name);
-        addTail(name);
+    /**
+     * Para obtener el nodo de Tipo documento.
+     * @return
+     */
+    public Document getDoc(){
+        return this.doc;
     }
 
-    public void addDoc(Document value) {
-        Document doc = new Document();
-        if(head==null) {
-            Node node = new Node(value);
-            node = head;
-        }else{
-            Node temp = head;
-            Node node = new Node(value);
-            temp.linkPrev(node);
-            node.linkNext(temp);
-        }
-    }
-    public void getStore(Object name){
-        Node node = head;
-    }
-
+    /**
+     * El "Commit" que basicamente solo hace los directorios.
+     */
     public void commit(){
         Node temp = this.head;
         int count = 0;

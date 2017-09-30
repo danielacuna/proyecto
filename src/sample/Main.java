@@ -12,8 +12,18 @@ import javafx.scene.input.KeyCode;
 import javafx.scene.input.KeyEvent;
 import javafx.stage.Stage;
 
-public class Main extends Application {
+/**
+ * @author Daniel Acuña
+ */
 
+public class Main extends Application {
+    /**
+     *
+     * @param primaryStage
+     * @throws Exception
+     *
+     * Llama al sample.fxml para cargar la interfaz grafica
+     */
     @Override
     public void start(Stage primaryStage) throws Exception{
         Parent root = FXMLLoader.load(getClass().getResource("sample.fxml"));

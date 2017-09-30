@@ -1,24 +1,37 @@
 package Listas;//Lista Circular Doblemente Enlazada
 
 /**
- * @author daniel acuña
+ * @author Daniel Acuña
  *
- * La clase documentos
+ * La clase documentos está dentro de Json Stores
+ *
  *
  * */
 
     public class Document {
-
+    /**
+     * Se ponen los atributos que tendrá la clase
+     */
     private Node head;
     private Node tail;
     private int size;
     private Object object;
 
+    /**
+     * Constructor de la clase
+     */
     public Document(){
         this.head = null;
         this.tail = null;
         this.size = 0;
     }
+
+    /**
+     *Agregar nodo al principio de la Lista
+     * @param name
+     */
+
+
     public Object addFirst(Object name){
         if (head == null) {
             Node nodo = new Node(name);
@@ -38,6 +51,10 @@ package Listas;//Lista Circular Doblemente Enlazada
         size++;
         return head;
     }
+    /**
+     * Obtener el Nombre de un store basado en su indice(Necesaario para el
+     * ciclo for)
+     */
     public Object getIndexName(int index) {
         int count = 0;
         Node temporal = this.head;
@@ -48,8 +65,13 @@ package Listas;//Lista Circular Doblemente Enlazada
         }
         return temporal.getName();
     }
-    public Object seeFirst(){
-        return this.head.getName();
+
+    /**
+     * Metodos para ver el tamaño de la lista, y para ver el nombre del primer nodo
+     *
+     * @return
+     */
+    public Object seeFirstName(){return this.head.getName();
     }
     public int getSize(){
         return this.size;
